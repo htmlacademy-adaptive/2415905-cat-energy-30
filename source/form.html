@@ -48,40 +48,35 @@
       <form class="filter-form form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__group-user group-user">
           <label class="form__label" for="name">Имя:*</label>
-          <input class="form__input field" type="text" id="name" name="name" value="Барсик"
-            placeholder="Напишите кличку Вашего сота" required>
+          <input class="form__input field" type="text" id="name" name="name" value="Барсик" required>
         </div>
         <div class="form__group-user group-user">
           <label class="form__label" for="weight">Вес (кг):*</label>
-          <input class="form-input field" type="text" id="weight" name="weight" value="7"
-            placeholder="Укажите вес Вашего кота" required>
+          <input class="form-input field" type="text" id="weight" name="weight" value="7" required>
         </div>
         <div class="form__group-user group-user">
           <label class="form__label" for="age">Возраст (лет):</label>
-          <input class="form-input field" type="text" id="age" name="age" value="7"
-            placeholder="Укажите возраст Вашего кота" required>
+          <input class="form-input field" type="text" id="age" name="age" value="7" required>
         </div>
 
         <fieldset class="form__group-user group-radio">
           <legend class="visually-hidden">Выбор программы</legend>
           <ul class="group-radio__list">
             <li class="group-radio-item">
-              <label class="form__label" for="Weight-loss">
-                <input class="field radio-input" id="Weight-loss" name="group-radio" type="radio" checked>
-                <span class="radio-text">Похудение</span>
-              </label>
+              <label class="form__label" for="loss"><span class="radio-text">Похудение</span></label>
+              <input class="field radio-input" id="loss" name="group-radio" type="radio" checked>
+              <span class="radio-text">Похудение</span>
             </li>
             <li class="group-radio-item">
-              <label class="form__label" for="Weight-gain">
-                <input class="field radio-input" id="Weight-gain" name="group-radio" type="radio">
-                <span class="radio-text">Набор массы</span>
+              <label class="form__label" for="gain"> <span class="radio-text">Набор массы</span>
               </label>
+                <input class="field radio-input" id="gain" name="group-radio" type="radio">
+
             </li>
             <li class="group-radio-item">
-              <label class="form__label" for="need-advice">
+              <label class="form__label" for="need-advice"><span class="radio-text">Не знаю (Нужен ваш совет)</span>
+              </label>
                 <input class="field radio-input" id="need-advice" name="group-radio" type="radio">
-                <span class="radio-text">Не знаю (Нужен ваш совет)</span>
-              </label>
             </li>
           </ul>
         </fieldset>
@@ -91,18 +86,18 @@
             (владельца кота)</legend>
           <ul class="contact-information__list">
             <li class="contact-information-item">
-              <label class="form__label" for="email">
+              <label class="form__label" for="email"> <span class="contact-information-text">E-mail:*</span>
+              </label>
                 <input class="contact-information-input field" id="email" name="email" type="email"
                   placeholder="Ваш e-mail" required>
-                <span class="contact-information-text">E-mail:*</span>
-              </label>
+
             </li>
             <li class="contact-information-item">
-              <label class="form__label" for="tel">
+              <label class="form__label" for="tel"><span class="contact-information-text">Телефон:*</span>
+              </label>
                 <input class="contact-information-input field" id="tel" name="tel-number" type="tel"
                   placeholder="Ваш номер телефона" required>
-                <span class="contact-information-text">Телефон:*</span>
-              </label>
+
             </li>
           </ul>
         </fieldset>
@@ -110,37 +105,34 @@
 
         <fieldset class="form__group-user сomment">
           <legend class="сomment__title legend-title">Комментарий</legend>
-          <label class="form__label" for="сomment">
-            <textarea id="сomment" name="сomment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
+            <textarea  name="сomment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__group-user group-checkbox">
           <legend class="visually-hidden">Дополнительно</legend>
           <ul class="group-checkbox__list">
             <li class="group-checkbox-item">
-              <label class="form__label" for="sweetener">
+              <label class="form__label" for="sweetener"><span class="checkbox-text">Сахарозаменитель</span>
+              </label>
                 <input class="field checkbox-input" id="sweetener" name="sweetener" type="checkbox" checked>
-                <span class="checkbox-text">Сахарозаменитель</span>
-              </label>
+
             </li>
             <li class="group-checkbox-item">
-              <label class="form__label" for="water">
+              <label class="form__label" for="water"><span class="checkbox-text">Питьевая вода</span>
+              </label>
                 <input class="field checkbox-input" id="water" name="water" type="checkbox">
-                <span class="checkbox-text">Питьевая вода</span>
-              </label>
+
             </li>
             <li class="group-checkbox-item">
-              <label class="form__label" for="milk">
+              <label class="form__label" for="milk"><span class="checkbox-text">Молоко</span>
+              </label>
                 <input class="field checkbox-input" id="milk" name="milk" type="checkbox">
-                <span class="checkbox-text">Молоко</span>
-              </label>
+
             </li>
             <li class="group-checkbox-item">
-              <label class="form__label" for="vitamins">
-                <input class="field checkbox-input" id="vitamins" name="vitamins" type="checkbox">
-                <span class="checkbox-text">Витамины</span>
+              <label class="form__label" for="vitamins"><span class="checkbox-text">Витамины</span>
               </label>
+                <input class="field checkbox-input" id="vitamins" name="vitamins" type="checkbox">
             </li>
           </ul>
         </fieldset>
