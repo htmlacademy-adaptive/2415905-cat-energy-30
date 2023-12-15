@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png" type="image/png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Страница подбора программы магазина «Cat Energy»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -11,9 +15,18 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image" src="images/logo-image.svg" width="33" height="38" alt="Логотип магазина «Cat Energy».">
-      <img class="logo__text" src="images/logo-text.svg" width="110" height="18" alt="«Cat Energy».">
+    <a class="main-header__logo logo" href="#">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logotype-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logotype-tablet.svg" width="60" height="50">
+        <img class="logo__image" src="images/logo/logo-image-mobile.svg" width="33" height="38" alt="Логотип магазина «Cat Energy»." aria-current="page">
+      </picture>
+    </a>
+    <a class="main-header__logo logo-text" href="#">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-text-desktop.svg" width="118" height="21">
+        <img class="logo-text__header" src="images/logo/logo-text-phone.svg" width="101" height="18" alt="«Cat Energy»." aria-current="page">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -156,15 +169,17 @@
     </div>
 
     <div class="main-footer__map map">
-      <img class="map__location" src="images/location.jpg" width="320" height="362"
-        alt="Местонахождение магазина «Cat Energy» на карте.">
+      <picture>
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
+        <img class="map__location" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png" width="320" height="362" alt="Местонахождение магазина «Cat Energy» на карте.">
+      </picture>
     </div>
 
     <div class="main-footer__social social">
-      <a class="social__logo logo" href="index.html">
-        <img class="logo__text" src="images/logo-text.svg" width="110" height="18" alt="Логотип магазина «Cat Energy».">
+      <a class="social__logo logo-text" href="#">
+        <img class="logo-text__footer" src="images/logo/logo-text-desktop.svg" width="128" height="24" alt="Логотип магазина «Cat Energy».">
       </a>
-
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
