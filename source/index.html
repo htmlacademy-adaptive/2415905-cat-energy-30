@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png" type="image/png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Магазин «Cat Energy»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -12,8 +16,17 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="#">
-      <img class="logo__image" src="images/logo-image.svg" width="33" height="38" alt="Логотип магазина «Cat Energy»." aria-current="page">
-      <img class="logo__text" src="images/logo-text.svg" width="110" height="18" alt="«Cat Energy»." aria-current="page">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logotype-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logotype-tablet.svg" width="60" height="50">
+        <img class="logo__image" src="images/logo/logo-image-mobile.svg" width="33" height="38" alt="Логотип магазина «Cat Energy»." aria-current="page">
+      </picture>
+    </a>
+    <a class="main-header__logo logo-text" href="#">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/logo/logo-text-desktop.svg" width="118" height="21">
+        <img class="logo__text" src="images/logo/logo-text-phone.svg" width="101" height="18" alt="«Cat Energy»." aria-current="page">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -38,7 +51,11 @@
     <section class="hero">
       <h1 class="hero__title main-title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="images/hero-prodact.svg" width="280" height="270" alt="Питание для котов «Кэт энерджи».">
+      <picture>
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x" >
+        <source type="image/png" media="(min-width: 768px)" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x" >
+        <img class="hero__image" src="source/images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png" width="280" height="270" alt="Рекламный продукт магазина «Cat Energy»">
+      </picture>
       <a class="hero__button button" href="form.html">Подобрать программу</a>
     </section>
     <div class="service">
@@ -80,10 +97,14 @@
       </div>
 
       <div class="review__slider slider">
-        <img class="slider__cat-before" src="img/slider__cat-before.jpg" width="50" height="33"
-          alt="Фотография кота Бориса: до.">
-        <img class="slider__cat-after" src="img/slider__cat-after.jpg" width="50" height="33"
-          alt="Фотография кота Бориса: после.">
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" >
+          <img class="slider__cat-before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png" width="280" height="256" alt="Фотография кота Бориса: до.">
+        </picture>
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" >
+          <img class="slider__cat-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png" width="280" height="256" alt="Фотография кота Бориса: после.">
+        </picture>
         <button class="slider__toggle slider__toggle--left slider__toggle--right" type="button"><span class="visually-hidden">Бегунок слайдера</span></button>
       </div>
     </section>
@@ -93,13 +114,16 @@
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
     <div class="main-footer__map map">
-      <img class="map__location" src="images/location.jpg" width="320" height="362" alt="Местонахождение магазина «Cat Energy» на карте.">
+      <picture>
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" width="768" height="400">
+        <img class="map__location" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png" width="320" height="362" alt="Местонахождение магазина «Cat Energy» на карте.">
+      </picture>
     </div>
 
     <div class="main-footer__social social">
-      <a class="social__logo logo" href="#">
-        <img class="logo__text" src="images/logo-text.svg" width="110" height="18" alt="Логотип магазина «Cat Energy»."
-          aria-current="page">
+      <a class="social__logo logo-text" href="#">
+            <img class="logo-text--footer" src="images/logo/logo-text-desktop.svg" width="128" height="24" alt="Логотип магазина «Cat Energy»." aria-current="page">
       </a>
 
       <ul class="social__list">
