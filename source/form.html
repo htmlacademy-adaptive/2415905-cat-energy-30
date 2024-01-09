@@ -55,29 +55,29 @@
   </header>
   <main class="main-form main">
     <section class="main__filter filter">
-      <h1 class="filter-title filter__title">Каталог продукции</h1>
+      <h1 class="filter__title">Каталог продукции</h1>
       <p class="filter__info">Заполните анкету, и мы подберем</p>
 
       <form class="filter__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__group-user group-info">
-          <legend class="group-info__title legend-title visually-hidden">Имя и параметры Вашего питомца</legend>
-          <ul class="group-info__list">
-            <li class="group-info__item">
+        <fieldset class="form__group group-user">
+          <legend class="group-user__title legend-title visually-hidden">Имя и параметры Вашего питомца</legend>
+          <ul class="group-user__list">
+            <li class="group-user__item">
               <label class="form__label" for="name">Имя:*</label>
-              <input class="group-info__input field" type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="group-user__input field" type="text" id="name" name="name" placeholder="Барсик" required>
             </li>
-            <li class="group-info__item">
+            <li class="group-user__item">
               <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="group-info__input field" type="text" id="weight" name="weight" placeholder="7" required>
+              <input class="group-user__input field" type="text" id="weight" name="weight" placeholder="7" required>
             </li>
-            <li class="group-info__item">
+            <li class="group-user__item">
               <label class="form__label" for="age">Возраст (лет):</label>
-              <input class="group-info__input field" type="text" id="age" name="age" placeholder="7" required>
+              <input class="group-user__input field" type="text" id="age" name="age" placeholder="7" required>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__group-user group-radio">
+        <fieldset class="form__group group-radio">
           <legend class="group-radio__title legend-title visually-hidden">Выбор программы</legend>
           <ul class="group-radio__list">
             <li class="group-radio__item radio">
@@ -98,7 +98,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__group-user contact-information">
+        <fieldset class="form__group contact-information">
           <legend class="contact-information__title legend-title">Контактные данные
             (владельца кота)</legend>
           <ul class="contact-information__list">
@@ -120,12 +120,12 @@
         </fieldset>
 
 
-        <div class="form__group-user сomment">
+        <div class="form__group сomment">
           <span class="сomment__title legend-title">Комментарий</span>
             <textarea  name="сomment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
-        <fieldset class="form__group-user group-checkbox">
+        <fieldset class="form__group group-checkbox">
           <legend class="group-checkbox__title legend-title">Дополнительно</legend>
           <ul class="group-checkbox__list">
             <li class="group-checkbox__item">
@@ -154,7 +154,7 @@
           </ul>
         </fieldset>
       </form>
-      <button class="filter__button button filter-button" type="submit">Отправить заявку</button>
+      <button class="button__filter button button-filter" type="submit">Отправить заявку</button>
       <p class="filter__info">* — Обязательные поля</p>
     </section>
   </main>
